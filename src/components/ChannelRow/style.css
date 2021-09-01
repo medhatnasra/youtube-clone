@@ -1,0 +1,37 @@
+.channelrow {
+  width: 100%;
+  min-height: 220px;
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.channelrow img {
+  width: 350px;
+  height: 100%;
+  background-color: lightgrey;
+}
+
+@media (max-width: 456px) {
+  .channelrow img {
+    width: 270px;
+  }
+}
+
+.text > * {
+  margin: 0.8rem;
+}
+
+.para {
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+@media (max-width: 880px) {
+  .channelrow {
+    flex-direction: column;
+  }
+  .para {
+    width: 240px;
+  }
+}

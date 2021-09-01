@@ -1,0 +1,46 @@
+.theme-toggle {
+  background: transparent;
+  border: none;
+}
+
+.theme-toggle svg {
+  width: 30px;
+  height: 35px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.toggle-sun {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 750ms
+    cubic-bezier(0.11, 0.14, 0.29, 1.32);
+  transition: -webkit-transform 750ms cubic-bezier(0.11, 0.14, 0.29, 1.32);
+  transition: transform 750ms cubic-bezier(0.11, 0.14, 0.29, 1.32);
+  transition: transform 750ms cubic-bezier(0.11, 0.14, 0.29, 1.32),
+    -webkit-transform 750ms cubic-bezier(0.11, 0.14, 0.29, 1.32);
+}
+.toggle-sun.change {
+  -webkit-transform: rotate(0.5turn);
+  transform: rotate(0.5turn);
+}
+
+.theme-toggle .toggle-circle {
+  -webkit-transform: translateX(-17%);
+  transform: translateX(-17%);
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+.toggle-circle.change {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+@media (max-width: 680px) {
+  .theme-toggle {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    margin: auto;
+  }
+}

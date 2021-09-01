@@ -1,0 +1,48 @@
+.sidebar {
+  /* flex-basis: 235px; */
+  transform: translateX(-100vw);
+  flex: 0;
+
+  height: 100%;
+  padding-block: 0.5rem;
+  position: sticky;
+  top: 8vh;
+  background-color: white;
+  z-index: 999;
+  transition: 0.5s ease-out;
+  transition-property: transform,flex;
+}
+
+.sidebar.show {
+  transform: translateX(0);
+  flex: 0.18;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.changing {
+  margin-top: 5.2rem;
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .changing {
+    margin-top: 5.2rem;
+    display: block;
+  }
+}
+
+.sidebar__videocall,
+.sidebar__apps,
+.sidebar__not,
+.sidebar__account {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  padding-block: 0.5rem !important;
+  font-size: 3rem !important;
+  cursor: pointer;
+}

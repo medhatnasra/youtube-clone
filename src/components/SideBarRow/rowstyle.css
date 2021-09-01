@@ -1,0 +1,51 @@
+.sidebarrow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-block: 0.5rem;
+}
+
+.sidebarrow > * {
+  flex: 1;
+}
+
+.sidebarrow.selected {
+  background-color: rgba(211, 211, 211,.3);
+}
+
+hr {
+  margin-block: 1.5rem;
+  border: 1px solid lightgray;
+  height: 0;
+}
+
+.sidebarrow:hover {
+  background-color: rgba(211, 211, 211,.3);
+  cursor: pointer;
+}
+.sidebarrow:hover > .sidebarrow__icon {
+  color: red;
+}
+
+.sidebarrow:hover > .sidebarrow__title {
+  font-weight: 500;
+}
+
+.sidebarrow__title {
+  font-size: 1rem;
+  pointer-events: none;
+}
+@media (max-width: 1218px) {
+  .sidebarrow__title {
+    display: none;
+
+  }
+
+}
+.sidebarrow__title.selected {
+  font-weight: 500;
+}
+
+.sidebarrow__icon.selected {
+  color: red;
+}
